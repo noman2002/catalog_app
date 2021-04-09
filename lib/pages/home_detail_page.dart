@@ -17,7 +17,6 @@ class HomeDetailPage extends StatelessWidget {
         backgroundColor: Colors.transparent,
       ),
       backgroundColor: MyThemes.creamColor,
-      
       bottomNavigationBar: Container(
         color: Colors.white,
         child: ButtonBar(
@@ -32,8 +31,8 @@ class HomeDetailPage extends StatelessWidget {
                     MaterialStateProperty.all(MyThemes.darkBluishcolor),
                 shape: MaterialStateProperty.all(StadiumBorder()),
               ),
-              child: "Buy".text.make(),
-            ).wh(100, 50),
+              child: "Add to cart".text.make(),
+            ).wh(120, 50),
           ],
         ).p32(),
       ),
