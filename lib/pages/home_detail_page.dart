@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_catalog/models/catalog.dart';
 import 'package:flutter_catalog/widgets/themes.dart';
@@ -12,8 +13,11 @@ class HomeDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+      ),
       backgroundColor: MyThemes.creamColor,
+      
       bottomNavigationBar: Container(
         color: Colors.white,
         child: ButtonBar(
@@ -59,6 +63,11 @@ class HomeDetailPage extends StatelessWidget {
                           .xl
                           .make(),
                       10.heightBox,
+                      "Sit sanctus erat no sea takimata, diam aliquyam labore est at est. Et ut ut kasd voluptua et no eos sea diam. Est sanctus at dolore ea clita sadipscing sit."
+                          .text
+                          .textStyle(context.captionStyle)
+                          .make()
+                          .p16(),
                     ],
                   ).py64(),
                 ),
