@@ -114,7 +114,7 @@ class catalogItem extends StatelessWidget {
                     "\$${catalog.price}".text.bold.lg.make(),
                     ElevatedButton(
                       onPressed: () {},
-                      style: ButtonStyle(
+                      style: ButtonStyle( 
                         backgroundColor:
                             MaterialStateProperty.all(MyThemes.darkBluishcolor),
                         shape: MaterialStateProperty.all(StadiumBorder()),
