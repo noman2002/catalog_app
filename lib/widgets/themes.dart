@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:velocity_x/velocity_x.dart';
 
 class MyThemes {
   static ThemeData lightTheme(BuildContext context) => ThemeData(
@@ -14,9 +15,19 @@ class MyThemes {
       );
 
   static ThemeData darkTheme(BuildContext context) => ThemeData(
-        brightness: Brightness.dark,
+        cardColor: Colors.black,
+        canvasColor: darkCreamColor,
+        fontFamily: GoogleFonts.poppins().fontFamily,
+        appBarTheme: AppBarTheme(
+          color: Colors.white,
+          elevation: 0.0,
+          iconTheme: IconThemeData(color: Colors.black),
+          textTheme: Theme.of(context).textTheme,
+        ),
       );
 //colors
   static Color creamColor = Color(0xfff5f5f5);
+  static Color darkCreamColor = Vx.gray900;
   static Color darkBluishcolor = Color(0xff403b58);
+  static Color lightBluishcolor = Vx.purple400;
 }
