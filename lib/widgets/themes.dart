@@ -9,7 +9,7 @@ class MyThemes {
         cardColor: Colors.white,
         canvasColor: creamColor,
         buttonColor: darkBluishcolor,
-        accentColor: Colors.deepPurple,
+        accentColor: darkBluishcolor,
         appBarTheme: AppBarTheme(
           color: Colors.white,
           elevation: 0.0,
