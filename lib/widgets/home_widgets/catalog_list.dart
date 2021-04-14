@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_catalog/models/catalog.dart';
 import 'package:flutter_catalog/pages/home_detail_page.dart';
 import 'package:flutter_catalog/widgets/home_widgets/catalog_image.dart';
-import 'package:flutter_catalog/widgets/themes.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class catalogList extends StatelessWidget {
@@ -18,7 +17,8 @@ class catalogList extends StatelessWidget {
           onTap: () => Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => HomeDetailPage(catalog: catalog),
+              builder: (context) =>
+                  HomeDetailPage(catalog: CatalogModel.getById(2 )),
             ),
           ),
           child: catalogItem(catalog: catalog),
