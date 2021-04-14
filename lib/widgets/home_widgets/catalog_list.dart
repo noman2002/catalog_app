@@ -17,8 +17,7 @@ class catalogList extends StatelessWidget {
           onTap: () => Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) =>
-                  HomeDetailPage(catalog: CatalogModel.getById(2 )),
+              builder: (context) => HomeDetailPage(catalog: catalog),
             ),
           ),
           child: catalogItem(catalog: catalog),
