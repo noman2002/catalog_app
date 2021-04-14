@@ -5,7 +5,8 @@ import 'package:flutter_catalog/pages/home_detail_page.dart';
 import 'package:flutter_catalog/widgets/home_widgets/catalog_image.dart';
 import 'package:velocity_x/velocity_x.dart';
 
-class catalogList extends StatelessWidget {
+// ignore: camel_case_types
+class CatalogList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
@@ -20,17 +21,17 @@ class catalogList extends StatelessWidget {
               builder: (context) => HomeDetailPage(catalog: catalog),
             ),
           ),
-          child: catalogItem(catalog: catalog),
+          child: CatalogItem(catalog: catalog),
         );
       },
     );
   }
 }
 
-class catalogItem extends StatelessWidget {
+class CatalogItem extends StatelessWidget {
   final Item catalog;
 
-  const catalogItem({Key key, @required this.catalog})
+  const CatalogItem({Key key, @required this.catalog})
       : assert(catalog != null),
         super(key: key);
   @override

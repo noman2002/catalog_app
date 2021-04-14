@@ -57,7 +57,7 @@ class _HomePageState extends State<HomePage> {
               children: [
                 CatalogHeader(),
                 if (CatalogModel.items != null && CatalogModel.items.isNotEmpty)
-                  catalogList().pOnly(top: 16).expand()
+                  CatalogList().pOnly(top: 16).expand()
                 else
                   CircularProgressIndicator().centered().expand(),
               ],
