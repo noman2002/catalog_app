@@ -41,7 +41,7 @@ class _CartTotal extends StatelessWidget {
             onPressed: () {
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
-                  content: "Buying not supported yet".text.make(),
+                  content: "Only Kidney Pay is availabe".text.make(),
                 ),
               );
             },
