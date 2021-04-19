@@ -67,7 +67,7 @@ class __CartListState extends State<_CartList> {
   @override
   Widget build(BuildContext context) {
     return _cart.items?.isEmpty
-        ? "Cart is empty".text.xl3.makeCentered()
+        ? "Empty cart".text.xl3.makeCentered()
         : ListView.builder(
             itemCount: _cart.items?.length,
             itemBuilder: (context, index) => ListTile(
