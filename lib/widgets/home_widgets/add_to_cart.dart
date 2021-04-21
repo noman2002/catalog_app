@@ -22,7 +22,6 @@ class AddToCart extends StatelessWidget {
       onPressed: () {
         if (!isInCart) {
           AddMutation(catalog);
-          // setState(() {});
         }
       },
       style: ButtonStyle(
