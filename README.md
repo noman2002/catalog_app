@@ -6,4 +6,4 @@ A new Flutter project.
 
 This project is a starting point for a Flutter application.
 
-[APK](build/app/outputs/flutter-apk/app-armeabi-v7a-release.apk)
+[APK]()
