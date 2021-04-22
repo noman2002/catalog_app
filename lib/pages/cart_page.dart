@@ -33,7 +33,6 @@ class _CartTotal extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           VxBuilder(
-           
             builder: (context, _) {
               return "\$${_cart.totalPrice}"
                   .text
