@@ -58,6 +58,7 @@ class _CartTotal extends StatelessWidget {
   }
 }
 
+
 class _CartList extends StatelessWidget {
   final CartModel _cart = (VxState.store as MyStore).cart;
   @override
