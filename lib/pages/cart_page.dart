@@ -32,11 +32,17 @@ class _CartTotal extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          "\$${_cart.totalPrice}"
-              .text
-              .color(context.theme.accentColor)
-              .xl5
-              .make(),
+          VxConsumer(
+            notifications: {},
+            builder: (context, _) {
+              return "\$${_cart.totalPrice}"
+                  .text
+                  .color(context.theme.accentColor)
+                  .xl5
+                  .make();
+            },
+            mutations: {RemoveMutation},
+          ),
           30.widthBox,
           ElevatedButton(
             onPressed: () {
