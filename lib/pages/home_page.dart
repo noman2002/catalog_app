@@ -9,6 +9,7 @@ import 'package:flutter_catalog/utils/routes.dart';
 import 'package:flutter_catalog/widgets/home_widgets/catalog_list.dart';
 import 'package:flutter_catalog/widgets/home_widgets/catatlog_header.dart';
 import 'package:velocity_x/velocity_x.dart';
+import 'package:http/http.dart' as http;
 
 class HomePage extends StatefulWidget {
   const HomePage({Key key}) : super(key: key);
@@ -18,6 +19,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  final url = "";
   @override
   void initState() {
     super.initState();
@@ -52,10 +54,11 @@ class _HomePageState extends State<HomePage> {
               color: Colors.white,
             ),
           ).badge(
-              color: Vx.gray500,
-              size: 20,
-              count: _cart.items.length,
-              textStyle: TextStyle(fontWeight: FontWeight.bold),),
+            color: Vx.gray500,
+            size: 20,
+            count: _cart.items.length,
+            textStyle: TextStyle(fontWeight: FontWeight.bold),
+          ),
         ),
         body: SafeArea(
           child: Container(
