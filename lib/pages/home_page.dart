@@ -52,11 +52,10 @@ class _HomePageState extends State<HomePage> {
               color: Colors.white,
             ),
           ).badge(
-              color: Vx.green300,
+              color: Vx.gray500,
               size: 20,
               count: _cart.items.length,
-              textStyle:
-                  TextStyle(color: Colors.black, fontWeight: FontWeight.bold)),
+              textStyle: TextStyle(fontWeight: FontWeight.bold),),
         ),
         body: SafeArea(
           child: Container(
