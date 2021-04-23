@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:velocity_x/velocity_x.dart';
 
-
 // ignore: camel_case_types
 class catalogImage extends StatelessWidget {
   final String image;
